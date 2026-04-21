@@ -1,5 +1,5 @@
 # sugar
-A miniature macropad with 5 keys and a rotary encoder, powered by a RP2040 microcontroller. Based on the [Bento macropad](https://github.com/Dwin17/bento) originally designed by Dwin17, featuring a custom knob and without LED underglow. 
+A miniature hand wired macropad with 5 keys and a rotary encoder, powered by a RP2040 microcontroller. Based on the [Bento macropad](https://github.com/Dwin17/bento) originally designed by Dwin17, featuring a custom knob and without LED underglow. 
 
 Turn the knob to control volume, press the knob to pause/play media. Hold the purple button to switch to second layer functionalities.
 
@@ -13,7 +13,7 @@ I made this macropad so I could easily carry it with me and quickly open various
 ![zine](https://github.com/ordinarydairy/sugar-keypad/blob/main/zine/A5%20-%201.png?raw=true)
 
 ## Assembly
-The top and bottom pieces of the case will eventually be glued together.
+The top and bottom pieces of the case will eventually be glued together. Alternatively, you could also drill holes and attatch the pieces with screws.
 ![hi](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/macropad%20assembly.png?raw=true)
 ![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/macropad%20view1.png?raw=true)
 ![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/macropad%20view2.png?raw=true)
