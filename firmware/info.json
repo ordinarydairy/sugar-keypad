@@ -2,18 +2,21 @@
   "manufacturer": "sugar",
   "url": "https://google.com",
   "maintainer": "sugar",
+  "bootloader": "rp2040",
   "usb": {
-    "vid": "0xCB10"
+    "vid": "0xCB10",
+    "pid": "0x1111",
+    "device_version": "0.0.1"
   },
   "encoder": {
     "rotary": [
-      {"pin_a": "GP5", "pin_b": "GP6"}
+      {"pin_a": "GP17", "pin_b": "GP16"}
     ]
   },
   "matrix_pins":{
       "direct": [
-      ["GP0", "GP1", "GP7"],
-      ["GP2", "GP3", "GP4"]
+      ["GP1", "GP0", "GP28"],
+      ["GP4", "GP3", "GP2"]
     ]  
   },
   "layouts": {
@@ -24,10 +27,7 @@
         {"x": 2, "y": 0, "matrix": [0, 2]},
         {"x": 0, "y": 1, "matrix": [1, 0]},
         {"x": 1, "y": 1, "matrix": [1, 1]},
-        {"x": 2, "y": 1, "matrix": [1, 2]},
-        {"x": 0, "y": 2, "matrix": [2, 0]},
-        {"x": 1, "y": 2, "matrix": [2, 1]},
-        {"x": 2, "y": 2, "matrix": [2, 2]}
+        {"x": 2, "y": 1, "matrix": [1, 2]}
       ]
     }
   }
