@@ -1,19 +1,50 @@
 # sugar
 A miniature hand wired macropad with 5 keys and a rotary encoder, powered by a RP2040 microcontroller. Based on the [Bento macropad](https://github.com/Dwin17/bento) originally designed by Dwin17, featuring a custom knob and without LED underglow. 
 
-Turn the knob to control volume, press the knob to pause/play media. Hold the purple button to switch to second layer functionalities.
+Turn the knob to control volume, press the knob to pause/play media. 
 
-Pink - Media previous | Control Center  
-Yellow - Media next | Assistant  
-Green - Undo | Launchpad  
-Blue - Redo | Mission Control
+Pink - Media previous 
+Yellow - Media next 
+Green - Mission Control
+Blue - Launchpad
+Purple - Mute
 
 I made this macropad so I could easily carry it with me and quickly open various applications and use shortcuts on my Mac. 
 
-![zine](https://github.com/ordinarydairy/sugar-keypad/blob/main/zine/A5%20-%201.png?raw=true)
+**DEMO: https://www.youtube.com/shorts/_mDDtd0E8uY**
+
+![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/build%203.jpeg?raw=true)
+![zine](https://github.com/ordinarydairy/sugar-keypad/blob/main/zine/zine%20-%20built.png?raw=true)
+
+
+## Build instructions
+- Print out all parts (case, bottom, knob)
+- Push switches into rectanglular holes in case and push rotary encoder through circular hole. Use the nut to secure the rotary encoder in place.
+    - You can put the keycaps and knob cap on or wait until later
+- Turn upside down (hollow side up), connect a single pin on each switch as well as the ground pins on the rotary encoder (see schematic) together.
+- Solder a wire to all other pins vertically
+
+![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/build%201.jpeg?raw=true)
+- Connect a wire from the connected ground pins to GND on the microcontroller
+- Connect other wires to their respective pins on the microcontroller (see schematic)
+    - switch 1: gp1
+    - 2: gp0
+    - 3: gp4
+    - 4: gp3
+    - 5: gp2
+    - s1/clk: gp28
+    - a: gp16
+    - c: gp17
+
+a and c are NOT connected to the correct pins in this image, connect them to gp16 and gp17 (bottom two pins on right) or the code controlling the volume knob won't work
+![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/build%202.jpeg?raw=true)
+- Push the microconcontroller down and align the usb port with the hole on the side of the case
+- Glue the case bottom to the bottom of the case
+- If you haven't already, put on keycaps and knob cap
 
 ## Assembly
-The top and bottom pieces of the case will eventually be glued together. Alternatively, you could also drill holes and attatch the pieces with screws.
+
+
 ![hi](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/macropad%20assembly.png?raw=true)
 ![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/macropad%20view1.png?raw=true)
 ![](https://github.com/ordinarydairy/sugar-keypad/blob/main/images/macropad%20view2.png?raw=true)
